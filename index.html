@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.js" type="text/javascript"></script>
+    <link href="css/jquery-ui-1.10.3.custom.css" rel="stylesheet" type="text/css" />
+    <title>JQuery - Date Picker for Thai Region</title>
+</head>
+<body>
+
+    <h1>
+        DatepickerThai
+    </h1>
+
+    <p>
+        JQuery - Date Picker for Thai Region
+    </p>
+    <input type="text" id="txtDate" />
+
+    <script>
+        $(document.getElementById('txtDate')).datepicker({
+            isBE: true,
+            yearRange: "1920:2200",
+            inline: true
+        });
+    </script>
+</body>
+</html>
